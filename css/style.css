@@ -1,0 +1,351 @@
+:root {
+   /* color */
+ --red-border: hsla(9, 90%, 50%, 0.5); /* #F2310F */
+ --orange-200: #000000;
+ --orange-100: hsl(44, 100%, 50%); /* #FFBA00 */
+ --yellow-100:hsl(45, 100%, 69%); /* #ffd75f */
+}
+  
+  
+  html, body {
+   overflow-x: hidden;
+  }
+
+  body {
+         font-size: 16px;
+         font-family: 'Inter', sans-serif;
+         margin: 0;
+         padding: 0;
+         color: #f3ecec;
+      }
+
+   .background {
+      background-image: url(../img/bg.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+   }
+
+   .blur {
+      background:  rgba(124, 125, 128, 0.7);
+      backdrop-filter: blur(8px);
+      height: 100%;
+      width: 100%;
+   }
+   
+   .filling {
+      background: #acacac9f;
+   }
+
+   a {
+      text-decoration: none;
+   }
+
+   h1, h2 {
+      color: var(--orange-100);
+   }
+
+   .h1 {
+      font-size: 32px;
+      margin: 15px 0;
+   }
+   h2 {
+      margin-top: 15px;
+      margin-bottom: 15px;
+   }
+
+   ul {
+      list-style-type: none;
+      padding: 0;
+   }
+   
+
+
+/* _____ШАПКА____ */
+
+   nav {
+      border-bottom: 2px solid var(--red-border);
+   }
+
+   .nav-link {
+      color: var(--orange-100);
+      font-size: 1.1em !important;
+      padding-left: 10px;
+   }
+   .navbar-nav .nav-link {
+      padding-right: 0;
+      padding-left: 10px;
+   }
+
+   .nav-link:hover {
+      color: var(--yellow-100);
+   }
+
+   .navbar-brad img {
+      width: 100px;
+   }
+
+   .logo-header {
+      height: 42px;
+   }
+
+   .fa-map-marker {
+      color: var(--red-border);
+      transform: scale(1.5,1.5);
+   }
+
+   .active{
+      background-color: var(--orange-100);
+      border-radius: 10px;
+   }
+   .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+      color: #fff;
+   }
+   
+   .navbar-brand img {
+   padding-left: 12px;
+   }
+
+   .navbar-toggler{
+   margin-right: 12px;
+   }
+
+   .navbar-light .navbar-toggler {
+   border-color: var(--orange-100);
+   }
+   .navbar-toggler {
+   border: 3px solid transparent;;
+   }
+
+   .custom-toggler .navbar-toggler-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,186,0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+   }
+     
+/* _____КОНТЕЙНЕР КТО____ */
+   
+   .container-who {
+      margin: 20px auto;
+   }
+   .container-who-ritgh{
+      margin-top: 20px;
+      
+   }
+
+   .container-who-left{
+      margin: auto 0;
+   }
+
+   article {
+      margin: 20px auto;
+   }
+
+   .surveyor {
+      object-fit: cover;
+      height: auto;
+      width: 100%; 
+      max-width: 400px;
+      display: block;
+      margin: auto;
+      padding: 0 12px;
+   }
+
+   .logo, .logo2 {
+      /* height: 50px; */
+
+      object-fit: cover;
+      height: auto;
+      width: 100%; 
+      max-width: 240px;
+      display: block;
+      margin: auto;
+   }
+
+   .logo2 {
+      display: none;
+   }
+
+   .container-who-text, .container-who-logo {
+      text-align: center;
+      margin: 0 16px;
+   }
+
+
+/* ___РАБОТЫ___ */
+
+   .listWork li {
+      padding: 10px 12px 10px 0;
+      position: relative;
+      list-style: none;
+      margin-left: 30px;
+   }
+   .listWork li::before {
+      position: absolute;
+      left: -0.6em;
+      top: 0em;
+    
+      display: inline-block; 
+      
+      font-size: 1.8em;
+      color: var(--orange-100); /* цвет маркера */
+      content: "-";
+      }
+
+   .row {
+      margin: 25px 0 x;
+
+   }
+
+   .btn {
+
+      position: relative;
+      left: 50%;
+      transform: translate(-50%, 0);
+      margin-top: 20px;
+      padding: 12px;
+   }
+
+   .btn a {
+      color: #fff;
+      font-weight: bold;
+      margin: 30px 0;
+   }
+
+
+/* ____ИНФОРМАЦИЯ_____ */
+
+   .address {
+      padding: 29px;
+   }
+
+   ul.telephone {
+      text-align: right;
+      padding: 11px;
+      
+   }
+
+   .information{
+      border-top: 2px solid var(--red-border); 
+      margin: 30px 0;
+   }
+   
+   .contactsInfo{
+      margin-top: 30px;
+   }
+
+   .right{
+      display: flex;
+      justify-content: flex-start;
+      padding-left: 20px;
+   }
+   .left {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 30px;
+   }
+
+   .row-info p{
+   display:inline-block;
+   vertical-align:middle;
+   line-height: 40px;
+   
+   }
+
+   .contacts {
+      border-top: 2px solid var(--red-border);
+      margin: 30px 0;
+      padding-right: 12px;
+   }
+
+   h2.article-text {
+      text-align: center; 
+      margin-top: 25px;
+      padding: 0 12px;
+   }
+
+   .blockmap{ 
+      border-top: 2px solid var(--red-border);
+      padding-left: 12px;
+      padding-right: 12px;
+   }
+   #map {
+      margin: 30px auto;
+      text-align: center; 
+      max-width: 550px;
+
+   }
+
+   
+
+
+/* ____ПОДВАЛ____ */
+
+   footer {
+      border-top: 2px solid var(--red-border);
+      color: var(--orange-100);
+   }
+
+   .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+      padding-left: 0;
+      padding-right: 0;
+   
+   }
+   
+   footer p {
+      margin: 0;
+      padding: 24px auto;
+      font-size: 18px;
+   }
+
+
+
+   @media (max-width:992px) {
+      #map {
+         /* margin-top: 70px; */
+         height: 370px;
+      }
+      
+      .container-who-logo {
+         display: none;
+      }
+
+      .logo2 {
+         display: block;
+         margin-top: 30px;
+      }
+
+    }
+
+   @media (max-width: 767px) {
+      .blockmap{
+         border-top: 2px solid var(--red-border);
+         margin-top: 30px;
+      }
+
+      .contactsInfo{
+         height: auto;
+         padding: auto 10px;
+      }
+
+      .article-text-name p{
+         margin-bottom: 0px;
+      }
+      #map {
+         margin-top: 30px;
+         
+      }
+      .right, .left{
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+      padding-right: 0;
+
+      }
+      .article-text {
+         text-align: center; 
+    }
+
+   }
