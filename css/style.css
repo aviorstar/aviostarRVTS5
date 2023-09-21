@@ -251,8 +251,11 @@
    display:inline-block;
    vertical-align:middle;
    line-height: 40px;
-   margin-left: 0;
-   margin-right: 0;
+   }
+
+   .row-info  {
+     padding-right: 12px;
+     padding-left: 12px;
    }
 
    .contacts {
